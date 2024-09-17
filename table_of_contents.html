@@ -1,10 +1,58 @@
 <html>
     <head>
         <link rel="stylesheet" href="layout.css" />
+        <title>Posts | Isaac's Blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
+        <header>
+            <a class="title" href="blog_layout.html">
+                <h1>Isaac's Blog</h1>
+            </a>
+            <nav>
+                <a href="/blog_layout.html">Home</a>
+                <a href="/table_of_contents.html">Posts</a>
+                <a href="/blog_post_form.html">New Post</a>
+            </nav>
+        </header>
         <main>
-            <p>Hello</p>
+            <a href="/blog_post_form.html"><button>+ New Post</button></a>
+            <table>
+                <caption>
+                    <h2>Posts</h2>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>17 Sep, 2024</td>
+                        <td>
+                            <a href="/posts/multimedia_blog_post.html"
+                                >Digital Album Collection</a
+                            >
+                        </td>
+                        <td>Connect your Spotify and track your listening</td>
+                    </tr>
+                    <tr>
+                        <td>9 Aug, 2024</td>
+                        <td>
+                            <a href="/posts/wordclouds.html"
+                                >Creating Wordclouds</a
+                            >
+                        </td>
+                        <td>Generate Wordclouds in Rust</td>
+                    </tr>
+                </tbody>
+            </table>
         </main>
+        <footer>
+            <p>Made by <strong>Isaac</strong></p>
+            <p>isaacd20015@gmail.com</p>
+        </footer>
     </body>
 </html>

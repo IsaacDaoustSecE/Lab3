@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/layout.css" />
+        <title>Creating Wordclouds | Isaac's Blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+        <style>
+            .meta {
+                display: flex;
+                flex-flow: column nowrap;
+
+                margin-bottom: 2rem;
+                padding-bottom: 1rem;
+                border-bottom: 2px dotted var(--link-color);
+            }
+
+            .post-title {
+                font-size: 1.5rem;
+                font-weight: bold;
+                opacity: 1;
+            }
+
+            .post-author {
+                opacity: 0.6;
+            }
+
+            video {
+                border: 1px solid #2d2d2d;
+                border-radius: 16px;
+                margin-bottom: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a class="title" href="/blog_layout.html">
+                <h1>Isaac's Blog</h1>
+            </a>
+            <nav>
+                <a href="/blog_layout.html">Home</a>
+                <a href="/table_of_contents.html">Posts</a>
+                <a href="/blog_post_form.html">New Post</a>
+            </nav>
+        </header>
+        <div class="page-content">
+            <aside>
+                <h3>Recent Posts</h3>
+                <a href="/posts/multimedia_blog_post.html">Digital Album Collection</a>
+                <a href="/posts/wordclouds.html">Creating Wordclouds</a>
+            </aside>
+            <main
+                "
+            >
+                <div class="meta">
+                    <span class="post-title">Creating Wordclouds</span>
+                    <span class="post-author">Isaac • Aug 9, 2024</span>
+                </div>
+                <div class="post-content">
+                    <p>
+                        If you've ever worked with text-heavy datasets, you know
+                        how challenging it can be to make sense of large amounts
+                        of information quickly. One effective and visually
+                        engaging solution is to generate word clouds. Word
+                        clouds (or tag clouds) highlight the most frequently
+                        used words in a given text by displaying them in various
+                        sizes, making it easy to identify important terms at a
+                        glance. But what if you're looking to do this in a fast
+                        and efficient way using a systems programming language
+                        like Rust?
+                    </p>
+                    <h3>Why Rust?</h3>
+                    <p>
+                        Rust is known for its performance, memory safety, and
+                        concurrency, making it a great choice for building
+                        highly efficient applications. And while it's commonly
+                        used for systems programming, you can also leverage its
+                        power for data visualization tasks like generating word
+                        clouds.
+                    </p>
+
+                    <h3>Here's a video explanation...</h3>
+                    <video
+                        width="100%"
+                        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                        controls
+                        autoplay
+                    ></video>
+
+                    <a href="https://github.com/isaackd/wcloud"
+                        >Visit the GitHub...</a
+                    >
+                </div>
+            </main>
+        </div>
+        <footer>
+            <p>Made by <strong>Isaac</strong></p>
+            <p>isaacd20015@gmail.com</p>
+        </footer>
+    </body>
+</html>

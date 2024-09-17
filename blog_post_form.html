@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="layout.css" />
+        <title>New Post | Isaac's Blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <style>
+            #submit {
+                background-color: rgb(230, 230, 230);
+                font-size: 1rem;
+                font-weight: bold;
+                color: black;
+
+                margin-top: 1rem;
+
+                transition: 250ms background-color;
+                cursor: pointer;
+            }
+
+            #submit:hover {
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a class="title" href="blog_layout.html">
+                <h1>Isaac's Blog</h1>
+            </a>
+            <nav>
+                <a href="/blog_layout.html">Home</a>
+                <a href="/table_of_contents.html">Posts</a>
+                <a href="/blog_post_form.html">New Post</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>New Post</h2>
+            <form>
+                <div class="input-container">
+                    <label for="post-title">Post Title</label>
+                    <input
+                        id="post-title"
+                        type="text"
+                        placeholder="Post Title..."
+                    />
+                </div>
+                <div class="input-container">
+                    <label for="post-author">Author</label>
+                    <input id="post-author" type="text" placeholder="Author" />
+                </div>
+                <div class="input-container">
+                    <label for="post-content">Author</label>
+                    <textarea
+                        id="post-content"
+                        rows="12"
+                        placeholder="Post content"
+                    ></textarea>
+                </div>
+
+                <div class="input-container">
+                    <label for="post-category">Post Category</label>
+                    <select id="post-category">
+                        <option>Programming</option>
+                        <option>Thoughts</option>
+                        <option>Music</option>
+                    </select>
+                </div>
+
+                <button id="submit">Submit</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>Made by <strong>Isaac</strong></p>
+            <p>isaacd20015@gmail.com</p>
+        </footer>
+
+        <script>
+            const submitButton = document.getElementById("submit");
+            submitButton.addEventListener("click", () => {
+                alert("Post created successfully!");
+            });
+        </script>
+    </body>
+</html>

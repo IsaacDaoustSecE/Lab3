@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/layout.css" />
+        <title>Digital Album Collection | Isaac's Blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <style>
+            .meta {
+                display: flex;
+                flex-flow: column nowrap;
+
+                margin-bottom: 2rem;
+                padding-bottom: 1rem;
+                border-bottom: 2px dotted var(--link-color);
+            }
+
+            .post-title {
+                font-size: 1.5rem;
+                font-weight: bold;
+                opacity: 1;
+            }
+
+            .post-author {
+                opacity: 0.6;
+            }
+
+            figure {
+                margin-bottom: 3rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a class="title" href="blog_layout.html">
+                <h1>Isaac's Blog</h1>
+            </a>
+            <nav>
+                <a href="/blog_layout.html">Home</a>
+                <a href="/table_of_contents.html">Posts</a>
+                <a href="/blog_post_form.html">New Post</a>
+            </nav>
+        </header>
+        <div class="page-content">
+            <aside>
+                <h3>Recent Posts</h3>
+                <a href="/posts/multimedia_blog_post.html"
+                    >Digital Album Collection</a
+                >
+                <a href="/posts/wordclouds.html">Creating Wordclouds</a>
+            </aside>
+            <main>
+                <div class="meta">
+                    <span class="post-title">Digital Album Collection</span>
+                    <span class="post-author">Isaac • Sep 19, 2024</span>
+                </div>
+                <div class="post-content">
+                    <figure>
+                        <img
+                            width="200"
+                            src="https://discollect.app/_next/image?url=https%3A%2F%2Fi.scdn.co%2Fimage%2Fab67616d0000b273705079df9a25a28b452c1fc9&w=256&q=75"
+                        />
+                        <figcaption>
+                            Album Cover for Morgan Wallen's "One Thing At A
+                            Time" album.
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        <a href="https://discollect.app">Discollect</a> is a
+                        website where you can collect albums by listening to
+                        them on Spotify. These albums will then show on your
+                        public profile for others to see. Whether you're into
+                        classic rock, hip-hop, jazz, or electronic, Discollect
+                        lets you build a personal album collection that reflects
+                        your unique taste in music.
+                    </p>
+
+                    <p>
+                        What makes this platform stand out is its integration
+                        with Spotify—there's no need to manually add albums.
+                        Simply listen, and Discollect will track your play
+                        history, automatically adding albums to your collection
+                        as soon as you’ve given them a proper listen. It’s more
+                        than just a music library; it’s a reflection of your
+                        listening journey.
+                    </p>
+
+                    <h3>Here's a sample...</h3>
+                    <audio controls>
+                        <source src="/audio/music.mp3" type="audio/mp3" />
+                        Your browser does not support the audio element.
+                    </audio>
+
+                    <p>
+                        By curating your collection, you not only show off the
+                        music you love but also discover what others are
+                        listening to. Your public profile lets friends and
+                        followers explore your tastes, find new albums, and even
+                        see overlaps between their collections and yours.
+                        Whether you're into uncovering hidden gems or keeping up
+                        with the latest releases, Discollect makes it easy to
+                        track your listening habits and share them with others.
+                        Discollect is perfect for anyone who loves music and
+                        wants to visualize their collection in a dynamic way.
+                    </p>
+
+                    <h3>Check out this track by Hannah Jadagu</h3>
+                    <iframe
+                        src="https://www.youtube.com/embed/eSYWawoCJjk?si=R00Qh-fC5J02p4Mt"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <p>Made by <strong>Isaac</strong></p>
+            <p>isaacd20015@gmail.com</p>
+        </footer>
+    </body>
+</html>

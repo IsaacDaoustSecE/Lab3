@@ -1,12 +1,176 @@
 body {
     margin: 0;
-    padding: 16px;
+    padding: 64px;
+    padding-top: 64px;
+    padding-bottom: 128px;
     background-color: black;
+    color: white;
+    max-width: 900px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+
+    margin: 0 auto;
+
+    --link-color: rgb(116, 235, 148);
+}
+
+.page-content {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 200px auto;
+    gap: 1rem;
+}
+
+header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+header .title {
+    text-decoration: none !important;
+}
+
+header .title h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav a:not(:last-child) {
+    margin-right: 0.75rem;
+}
+
+aside {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+aside h3 {
+    margin-bottom: 0rem;
+}
+
+caption {
+    text-align: left;
+}
+
+a {
+    color: var(--link-color);
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    padding: 0;
+}
+
+tr,
+td {
+    padding: 0.5rem 0;
 }
 
 main {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     width: 100%;
-    max-width: 700px;
-    background-color: #fafafa;
+    /* background-color: #fafafa; */
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+input,
+textarea,
+select,
+button {
+    background-color: #222222;
+    border-radius: 8px;
+    padding: 1rem;
+    border: 0;
+    color: white;
+}
+
+button {
+    background-color: rgb(230, 230, 230);
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+
+    margin-top: 1rem;
+
+    transition: 250ms background-color;
+    cursor: pointer;
+
+    width: 100%;
+}
+
+button:hover {
+    background-color: white;
+}
+
+button {
+    font-weight: bold;
+}
+
+.input-container {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    /* max-width: 300px; */
+}
+
+p,
+span {
+    opacity: 0.8;
+    line-height: 190%;
+}
+
+figcaption {
+    opacity: 0.5;
+    margin-top: 1rem;
+}
+
+figure {
+    background-color: #171717;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+img {
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    margin-top: 6rem;
+    border-top: 2px dotted var(--link-color);
+}
+
+footer p {
+    margin: 0;
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+@media screen and (max-width: 852px) {
+    aside {
+        display: none;
+    }
+    .page-content {
+        grid-template-columns: 1fr;
+    }
 }
